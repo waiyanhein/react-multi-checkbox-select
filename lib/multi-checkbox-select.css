@@ -1,0 +1,46 @@
+.multi-checkboxes-select-default-text {
+  cursor: pointer;
+  border: 1px solid #0d0d0d;
+}
+
+.multi-checkboxes-select-default-label {
+  padding: 5px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.multi-checkboxes-select-options-wrapper {
+  position: absolute;
+  top: 0px;
+  background: #ffffff;
+  width: 100%;
+}
+
+.multi-checkboxes-select-options {
+  position: relative;
+  overflow: visible;
+}
+
+.multi-checkboxes-select-option-item-wrapper {
+  padding: 10px;
+  cursor: pointer;
+}
+
+.multi-checkboxes-select-selected-item-label {
+  display: inline-block;
+  vertical-align: top;
+  margin: 5px;
+  padding-left: 5px;
+  padding-right: 5px;
+  background: #dddddd;
+  border-radius: 3px;
+}
+
+.multi-checkboxes-select-selected-item-label:hover {
+  opacity: 0.7;
+}
+
+.multi-checkboxes-remove-icon {
+  display: inline-block;
+  padding: 3px;
+}
