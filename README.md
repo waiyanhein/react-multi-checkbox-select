@@ -2,6 +2,9 @@
 
 This package allows you to have a component for multiple select field which has checkboxes before each option. This package is very easy to use and let you customise the style whatever you want.
 
+#### Installation
+- `npm i react-multi-checkbox-select`
+
 #### Importing the required files
 - `import 'react-multi-checkbox-select/lib/multi-checkbox-select.css'`;
 - `import MultiCheckboxSelect from 'react-multi-checkbox-select';`
@@ -27,10 +30,23 @@ This package allows you to have a component for multiple select field which has 
                               selectedMultiCheckboxesSelectValues: selectedValuesAfterRemoving
                         })
                   }}
+            onClose={() => {
+                       //on some occasions, you might want to detect when the dropdown is clsoed for example, the dropdown is closed when the user click on the screen outside of the fied
+            }}
             values={this.state.selectedMultiCheckboxesSelectValues}
             defaultText={"Select countries"}
             options={this.state.countryList}
       />
+      
+#### This is what it looks like after some basic customising on the CSS. You can style it to look like to whatever you want.
+Screenshot 1
+
+![alt text](https://waiyanhein-public.s3-eu-west-1.amazonaws.com/select_1.jpg)
+
+Screenshot 2
+
+![alt text](https://waiyanhein-public.s3-eu-west-1.amazonaws.com/select_2.jpg)
+    
       
 #### Props/ Attributes
 
@@ -43,3 +59,4 @@ This package allows you to have a component for multiple select field which has 
 #### Callbacks
 - `onChange` - "This will be triggered each time a checkbox has been ticked or un-ticked."
 - `onRemove` - "This will be triggered each time a selected item has been removed."
+- `onClose` - "This will be triggered when the select dropdown is closed."

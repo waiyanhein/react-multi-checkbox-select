@@ -23,17 +23,24 @@ class MultiCheckboxSelect extends React.Component {
     }
 
     handleClickOutside = (event) => {
-        if (this.refSelect && !this.refSelect.current.contains(event.target)) {
+        if (this.refSelect && this.refSelect.current && !this.refSelect.current.contains(event.target)) {
             this.setState({
                 expanded: false
             })
+
+            this.props.onClose();
         }
     }
 
     handleDefaultTextClick = (e) => {
+        let expanded = ! this.state.expanded;
         this.setState({
-            expanded: ! this.state.expanded
+            expanded: expanded
         })
+
+        if (! expanded) {
+            this.props.onClose();
+        }
     }
 
     handleOptionItemClick = (item) => {
@@ -83,7 +90,7 @@ class MultiCheckboxSelect extends React.Component {
         }
 
         return (
-            <div ref id={this.props.id} className={"multi-checkboxes-select-options"}>
+            <div ref id={this.props.id} className={`multi-checkboxes-select-options ${this.props.className}`}>
                 {this.renderHiddenFields()}
                 <div className={"multi-checkboxes-select-options-wrapper"} style={{display: this.state.expanded? "block": "none"}}>
                     {
@@ -161,6 +168,9 @@ MultiCheckboxSelect.defaultProps = {
     },
     onRemove: (name, valueToBeRemoved, selectedValuesAfterRemoving) => {
 
+    },
+    onClose: () => {
+
     }
 }
 
@@ -172,7 +182,8 @@ MultiCheckboxSelect.propTypes = {
     values: PropTypes.array,
     defaultText: PropTypes.string,
     onChange: PropTypes.func,
-    onRemove: PropTypes.func
+    onRemove: PropTypes.func,
+    onClose: PropTypes.func
 }
 
 export default MultiCheckboxSelect;
