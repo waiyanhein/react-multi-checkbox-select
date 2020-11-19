@@ -21,11 +21,7 @@
   <component name="ChangeListManager">
     <list default="true" id="ef4e3807-d282-4ffe-be3a-0ccf19bd4475" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/MultiCheckboxSelect.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/multi-checkbox-select.css" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/MultiCheckboxSelect.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/MultiCheckboxSelect.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,7 +55,7 @@
       <option name="presentableId" value="Default" />
       <updated>1605740969635</updated>
       <workItem from="1605740972739" duration="6282000" />
-      <workItem from="1605793610853" duration="3281000" />
+      <workItem from="1605793610853" duration="3626000" />
     </task>
     <servers />
   </component>
