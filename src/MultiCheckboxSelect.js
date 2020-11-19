@@ -40,6 +40,8 @@ class MultiCheckboxSelect extends React.Component {
 
         if (! expanded) {
             this.props.onClose();
+        } else {
+            this.props.onOpen();
         }
     }
 
@@ -169,6 +171,9 @@ MultiCheckboxSelect.defaultProps = {
     onRemove: (name, valueToBeRemoved, selectedValuesAfterRemoving) => {
 
     },
+    onOpen: () => {
+
+    },
     onClose: () => {
 
     }
@@ -183,6 +188,7 @@ MultiCheckboxSelect.propTypes = {
     defaultText: PropTypes.string,
     onChange: PropTypes.func,
     onRemove: PropTypes.func,
+    onOpen: PropTypes.func,
     onClose: PropTypes.func
 }
 

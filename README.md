@@ -33,6 +33,9 @@ This package allows you to have a component for multiple select field which has 
             onClose={() => {
                        //on some occasions, you might want to detect when the dropdown is clsoed for example, the dropdown is closed when the user click on the screen outside of the fied
             }}
+            onOpen={() => {
+                        //this will be called when the select dropdown is opened
+            }}
             values={this.state.selectedMultiCheckboxesSelectValues}
             defaultText={"Select countries"}
             options={this.state.countryList}
@@ -60,3 +63,18 @@ Screenshot 2
 - `onChange` - "This will be triggered each time a checkbox has been ticked or un-ticked."
 - `onRemove` - "This will be triggered each time a selected item has been removed."
 - `onClose` - "This will be triggered when the select dropdown is closed."
+
+#### The followinggs are all the props and callbacks
+
+    MultiCheckboxSelect.propTypes = {
+        id: PropTypes.string,
+        name: PropTypes.string,
+        className: PropTypes.string,
+        options: PropTypes.array,
+        values: PropTypes.array,
+        defaultText: PropTypes.string,
+        onChange: PropTypes.func,
+        onRemove: PropTypes.func,
+        onOpen: PropTypes.func,
+        onClose: PropTypes.func
+    }
