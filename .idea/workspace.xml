@@ -21,8 +21,8 @@
   <component name="ChangeListManager">
     <list default="true" id="ef4e3807-d282-4ffe-be3a-0ccf19bd4475" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/react-multi-checkbox-select-1.1.0.tgz" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,7 +56,7 @@
       <option name="presentableId" value="Default" />
       <updated>1605740969635</updated>
       <workItem from="1605740972739" duration="6282000" />
-      <workItem from="1605793610853" duration="3754000" />
+      <workItem from="1605793610853" duration="5185000" />
     </task>
     <servers />
   </component>
