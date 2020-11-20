@@ -67,6 +67,8 @@ Screenshot 2
 - `values` - "Currently selected array of values. Format - `[1, 2, 3]`."
 - `defaultText` - "Label that will be displayed when there is no option selected yet."
 - `options` - "Options for the select field. The type must be array in this format, `[ { value: 1, label: 'Myanmar' }, { value: 2, label: 'England' } ]`."
+- `customCheckedCheckbox` - "To define the custom component for checkboxes when they are checked"
+- `customUncheckedCheckbox` - "To define the custom component for checkboxes when they are not checked"
 
 
 #### Callbacks
@@ -86,5 +88,7 @@ Screenshot 2
         onChange: PropTypes.func,
         onRemove: PropTypes.func,
         onOpen: PropTypes.func,
-        onClose: PropTypes.func
+        onClose: PropTypes.func,
+        customCheckedCheckbox: ....,
+        customUncheckedCheckbox: ....
     }
