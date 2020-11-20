@@ -22,7 +22,10 @@
     <list default="true" id="ef4e3807-d282-4ffe-be3a-0ccf19bd4475" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/MultiCheckboxSelect.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/multi-checkbox-select.css" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MultiCheckboxSelect.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/MultiCheckboxSelect.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,7 +46,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../way-ui-react" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="terminal" />
   </component>
@@ -56,7 +59,9 @@
       <option name="presentableId" value="Default" />
       <updated>1605740969635</updated>
       <workItem from="1605740972739" duration="6282000" />
-      <workItem from="1605793610853" duration="5185000" />
+      <workItem from="1605793610853" duration="6472000" />
+      <workItem from="1605889742971" duration="3044000" />
+      <workItem from="1605893137849" duration="287000" />
     </task>
     <servers />
   </component>
@@ -76,12 +81,17 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="2106" y="261" key="FileChooserDialogImpl" timestamp="1605742105859">
+    <state x="1896" y="322" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1605889832867">
       <screen x="1366" y="0" width="1920" height="1040" />
     </state>
-    <state x="2106" y="261" key="FileChooserDialogImpl/0.0.1366.728/1366.0.1920.1040@1366.0.1920.1040" timestamp="1605742105859" />
+    <state x="1896" y="322" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1366.728/1366.0.1920.1040@1366.0.1920.1040" timestamp="1605889832867" />
+    <state x="2106" y="261" key="FileChooserDialogImpl" timestamp="1605891339182">
+      <screen x="1366" y="0" width="1920" height="1040" />
+    </state>
+    <state x="2106" y="261" key="FileChooserDialogImpl/0.0.1366.728/1366.0.1920.1040@1366.0.1920.1040" timestamp="1605891339182" />
     <state x="1857" y="165" key="SettingsEditor" timestamp="1605742109089">
       <screen x="1366" y="0" width="1920" height="1040" />
     </state>

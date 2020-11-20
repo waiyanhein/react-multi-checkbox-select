@@ -1,6 +1,6 @@
 {
     "name": "react-multi-checkbox-select",
-    "version": "1.1.2",
+    "version": "1.2.0",
     "description": "React JS component for multi-select field with checkboxes",
     "keywords": [ "react-multi-checkbox-select", "react-multiple-select", "react-multiple-checkboxes-select", "react-multiple-select-checkboxes" ],
     "main": "./lib/MultiCheckboxSelect.js",

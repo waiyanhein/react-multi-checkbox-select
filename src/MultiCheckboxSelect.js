@@ -86,6 +86,20 @@ class MultiCheckboxSelect extends React.Component {
         })
     }
 
+    renderCheckbox = (item) => {
+        if (this.props.customCheckedCheckbox && this.props.customUncheckedCheckbox) {
+            if (this.isItemSelected(item)) {
+                return this.props.customCheckedCheckbox;
+            }
+
+            return this.props.customUncheckedCheckbox;
+        }
+
+        return (
+                <span className={"multi-checkboxes-select-checkbox"}><input onChange={() => { }} checked={this.isItemSelected(item)} type={"checkbox"} className={"multi-checkboxes-select-option-item-checkbox"} /></span>
+        )
+    }
+
     renderOptions = () => {
         if (this.props.options.length < 1) {
             return null;
@@ -99,7 +113,7 @@ class MultiCheckboxSelect extends React.Component {
                         this.props.options.map(item => {
                             return (
                                 <div onClick={(e) => { this.handleOptionItemClick(item) }} key={item.value} className={"multi-checkboxes-select-option-item-wrapper"}>
-                                    <input onChange={() => { }} checked={this.isItemSelected(item)} type={"checkbox"} className={"multi-checkboxes-select-option-item-checkbox"} />
+                                    {this.renderCheckbox(item)}
                                     {" "}
                                     <span className={"multi-checkboxes-select-option-item-text"}>{item.label}</span>
                                 </div>
@@ -189,7 +203,21 @@ MultiCheckboxSelect.propTypes = {
     onChange: PropTypes.func,
     onRemove: PropTypes.func,
     onOpen: PropTypes.func,
-    onClose: PropTypes.func
+    onClose: PropTypes.func,
+    customCheckedCheckbox: (props, propName, ComponentName) => {
+        // if the  field is present, customUncheckedCheckbox prop must be provided too
+        if ((props[propName]!=undefined && props[propName]!=null && props[propName]!= "") &&
+            (props['customUncheckedCheckbox'] == undefined || props['customUncheckedCheckbox'] == null || props['customUncheckedCheckbox']== "")) {
+            return new Error("MultiCheckboxSelect: When customCheckedCheckbox prop is present, customUncheckedCheckbox prop also needs to be provided.");
+        }
+    },
+    customUncheckedCheckbox: (props, propName, ComponentName) => {
+        // if the filed is present, customCheckedCheckbox prop must be provided too
+        if ((props[propName]!= undefined && props[propName]!= null && props[propName]!= "") &&
+            (props['customCheckedCheckbox'] == undefined || props['customCheckedCheckbox'] == null || props['customCheckedCheckbox'] == "")) {
+            return new Error("MultiCheckboxSelect: When customUncheckedCheckbox prop is present, customCheckedCheckbox prop also needs to be provided.");
+        }
+    }
 }
 
 export default MultiCheckboxSelect;

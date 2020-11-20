@@ -41,6 +41,17 @@ This package allows you to have a component for multiple select field which has 
             options={this.state.countryList}
       />
       
+#### Using custom checkboxes
+
+Sometimes, you might want to  use you own components for the checkboxes. You can do so by using the customCheckedCheckbox and customUncheckedCheckbox props.
+
+    customCheckedCheckbox={<CheckedCheckboxComponent />}
+    customUncheckedCheckbox={<UncheckedCheckboxComponent />}
+    
+Note: you need to provide both props, customCheckedCheckbox and customUncheckedCheckbox if you are using custom components for the checkboxes.
+
+
+      
 #### This is what it looks like after some basic customising on the CSS. You can style it to look like to whatever you want.
 Screenshot 1
 
@@ -48,8 +59,7 @@ Screenshot 1
 
 Screenshot 2
 
-![alt text](https://i.ibb.co/59X6ZSc/select-2.jpg)
-    
+![alt text](https://i.ibb.co/59X6ZSc/select-2.jpg)    
       
 #### Props/ Attributes
 
